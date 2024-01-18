@@ -1,0 +1,93 @@
+@import "./styles/mixins.scss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*,
+*::after
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+img{
+    display: block;
+}
+ a, li{
+    text-decoration: none;
+    list-style: none;
+}
+button {
+    display: inline-block;
+    outline: none;
+    border: none;
+    background: none;
+}
+
+h1 {
+    color: black;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 1.1em;
+    margin-bottom: 10px;
+
+    @include respond(tab-port){
+        font-size: 40px;
+    }
+}
+
+h4{
+    color: black;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.1em;
+
+    @include respond(tab-port){
+        font-size: 25px;
+    }
+}
+
+h3{
+    color: black;
+    margin-bottom:10px;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.1em;
+
+    @include respond(tab-land){
+        font-size: 30px;
+    }
+}
+
+h6{
+    color: black;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.1em;
+
+}
+
+.button-primary {
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    background-color: #7e35e4;
+    border-radius: 30px;
+    padding: 10px 30px;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover{
+        background-color: #54267d;
+    }
+}
+
+
+
+

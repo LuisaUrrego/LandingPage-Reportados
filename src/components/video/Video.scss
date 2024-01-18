@@ -1,0 +1,15 @@
+@import "../../styles/mixins.scss";
+
+.video{
+    padding-block: 20px;
+    position: relative;
+    display: flex;
+   
+    &__report{
+       
+            width:100%;
+            @include respond(phone){
+                width: 100%;
+            }
+        }
+    }
