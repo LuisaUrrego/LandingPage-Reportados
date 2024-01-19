@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 224.75 224.75">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: url(#radial-gradient);
+      }
+    </style>
+    <radialGradient id="radial-gradient" cx="110.61" cy="121.19" fx="-22.72" fy="121.19" r="317.66" gradientTransform="translate(-36.16 140.62) rotate(-49.2) scale(1 .81)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f9ed32"/>
+      <stop offset=".05" stop-color="#f7d939"/>
+      <stop offset=".17" stop-color="#f4a54c"/>
+      <stop offset=".33" stop-color="#f0536b"/>
+      <stop offset=".4" stop-color="#ee2a7b"/>
+      <stop offset=".56" stop-color="#9e2aa7"/>
+      <stop offset=".72" stop-color="#5a2acc"/>
+      <stop offset=".85" stop-color="#292ae7"/>
+      <stop offset=".95" stop-color="#0b2af8"/>
+      <stop offset="1" stop-color="#002aff"/>
+    </radialGradient>
+  </defs>
+  <g id="OBJECTS">
+    <g>
+      <path class="cls-2" d="m224.75,112.38c0,62.06-50.31,112.37-112.37,112.37S0,174.44,0,112.38,50.31,0,112.37,0s112.37,50.31,112.37,112.38Z"/>
+      <g>
+        <path class="cls-1" d="m142.82,188.22h-60.89c-27.02,0-49.01-21.99-49.01-49.01v-53.66c0-27.02,21.99-49.01,49.01-49.01h60.89c27.02,0,49.01,21.99,49.01,49.01v53.66c0,27.02-21.99,49.01-49.01,49.01ZM81.93,47.43c-21.02,0-38.12,17.1-38.12,38.12v53.66c0,21.02,17.1,38.12,38.12,38.12h60.89c21.02,0,38.12-17.1,38.12-38.12v-53.66c0-21.02-17.1-38.12-38.12-38.12h-60.89Z"/>
+        <path class="cls-1" d="m112.37,156c-24.06,0-43.63-19.57-43.63-43.63s19.57-43.63,43.63-43.63,43.63,19.57,43.63,43.63-19.57,43.63-43.63,43.63Zm0-76.36c-18.05,0-32.73,14.68-32.73,32.74s14.68,32.73,32.73,32.73,32.74-14.69,32.74-32.73-14.69-32.74-32.74-32.74Z"/>
+        <path class="cls-1" d="m164.39,70.09c0,5-4.05,9.05-9.05,9.05s-9.05-4.05-9.05-9.05,4.05-9.05,9.05-9.05,9.05,4.05,9.05,9.05Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
