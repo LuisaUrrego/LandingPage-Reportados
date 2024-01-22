@@ -2,8 +2,8 @@
 
 
 $form-background: #f4f4f4;
-$input-border: #ccc;
-$input-focus-border: #6dabe4;
+$input-border: #000000;
+$input-focus-border: #54267d;
 $button-background: #7e35e4;
 $button-hover-background: #8f9cf8;
 $icon-color: #333;
@@ -16,14 +16,28 @@ $icon-color: #333;
   position: relative;
   padding-block: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  
+
+  @include respond(tab-port){
+    width: 75%;
+  }
+
+
+  &__text{
+    font-size: 30px;
+    color: #000000;
+    text-align: center;
+    font-weight: 900;
+
+    @include respond(tab-port){
+      font-size: 18px;
+    }
+  }
   
   &__formulario {
     display: flex;
     flex-direction: column;
     align-items: center;
    
-    
     .input-group {
       position: relative;
       display: flex;
@@ -38,13 +52,13 @@ $icon-color: #333;
         left: -18px;
         transform: translateY(-50%);
         font-size: 1.5em;
-        color: $icon-color;
+        color: $button-background;
       }
 
       .input {
         padding: 15px 15px 15px 40px; 
         width: 100%;
-        border: 2px solid $input-border;
+        border: 1px solid $input-border;
         border-radius: 8px;
         outline: none;
         font-size: 1em;

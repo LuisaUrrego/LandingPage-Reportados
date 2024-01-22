@@ -3,6 +3,9 @@ import Wrapper from '../wrapper/Wrapper';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillHouseFill } from 'react-icons/bs';
 import { WiTime3 } from 'react-icons/wi';
+import { FaRegCircleUser  } from "react-icons/fa6";
+import { FaPhoneAlt } from "react-icons/fa";
+import { LiaCitySolid } from "react-icons/lia";
 import './Formulario.scss';
 import axios from 'axios';
 import Swal from 'sweetalert2';
@@ -14,6 +17,8 @@ const Formulario = ({ reference }) => {
     
     //Validaciones del formulario 
     const validationSchema = Yup.object().shape({
+        nombre: Yup.string().required('Campo requerido'),
+        celular: Yup.string().required('Campo requerido'),
         correo: Yup.string().email('Ingresa un correo electrónico válido').required('Campo requerido'),
         ciudad: Yup.string().required('Campo requerido'),
         residencia: Yup.string().required('Campo requerido'),
@@ -23,6 +28,8 @@ const Formulario = ({ reference }) => {
   
     const { handleSubmit, handleChange, values, errors, touched, isSubmitting, resetForm } = useFormik({
       initialValues:{
+          nombre: '',
+          celular: '',
           correo: '',
           ciudad: '',
           residencia: '',
@@ -55,7 +62,36 @@ const Formulario = ({ reference }) => {
   return (
     <div className='form'  ref={reference} id="seccion3">
       <Wrapper>
+        <div className='form__text'>
+          <h2>Formulario de contacto</h2>
+        </div>
         <form className='form__formulario' onSubmit={handleSubmit}>
+        <div className='input-group'>
+            <FaRegCircleUser  className='icon' />
+            <input
+              type='text'
+              name='nombre'
+              className={`input ${touched.nombre && errors.nombre ? 'input-error' : ''}`}
+              placeholder='Nombre y apellido'
+              onChange={handleChange}
+              value={values.nombre}
+              disabled={isSubmitting}
+            />
+            {touched.nombre && errors.nombre && <div className='error-message'>{errors.nombre}</div>}
+          </div>
+          <div className='input-group'>
+            <FaPhoneAlt className='icon' />
+            <input
+              type='number'
+              name='celular'
+              className={`input ${touched.celular && errors.celular ? 'input-error' : ''}`}
+              placeholder='Celular'
+              onChange={handleChange}
+              value={values.celular}
+              disabled={isSubmitting}
+            />
+            {touched.celular && errors.celular && <div className='error-message'>{errors.celular}</div>}
+          </div>
           <div className='input-group'>
             <HiOutlineMail className='icon' />
             <input
@@ -70,7 +106,7 @@ const Formulario = ({ reference }) => {
             {touched.correo && errors.correo && <div className='error-message'>{errors.correo}</div>}
           </div>
           <div className='input-group'>
-            <BsFillHouseFill className='icon' />
+            <LiaCitySolid  className='icon' />
             <input
               type='text'
               name='ciudad'
@@ -108,6 +144,7 @@ const Formulario = ({ reference }) => {
             />
             {touched.tiempoReportado && errors.tiempoReportado && <div className='error-message'>{errors.tiempoReportado}</div>}
           </div>
+
           <button type='submit' className='button__enviar' >
             Enviar
           </button>

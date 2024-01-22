@@ -2,6 +2,7 @@ import Banner from "./components/banner/Banner";
 import Footer from "./components/footer/Footer";
 import Formulario from "./components/formulario/Formulario";
 import Navbar from "./components/navbar/Navbar";
+import Tiendas from "./components/tiendas/Tiendas";
 import Video from "./components/video/Video";
 import WhatsApp from "./components/whastapp/WhatsApp";
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Navbar/>
       <Banner/>
       <Video/>
+      <Tiendas/>
       <Formulario/>
       <WhatsApp phoneNumber={phoneNumber}/>
       <Footer/>
