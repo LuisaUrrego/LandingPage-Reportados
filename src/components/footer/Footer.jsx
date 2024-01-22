@@ -4,9 +4,9 @@ import logoInstagram from '../../assets/logoIg_1.svg'
 import logoFacebook from '../../assets/logofc.svg'
 import logoTecno from '../../assets/logoTecno.svg'
 
-const Footer = ({ reference }) => {
+const Footer = () => {
     return (
-        <div className='footer' ref={reference} id="seccion4" >
+        <div id="section5" className='footer'  >
             <Wrapper>
                 <div className='footer__container'>
                 <div className='footer__text'>

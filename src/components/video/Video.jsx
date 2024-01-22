@@ -2,9 +2,9 @@ import "./Video.scss";
 import Wrapper from "../wrapper/Wrapper";
 import video from "../../assets/video.mp4"
 
-const Video = ({ reference }) => {
+const Video = () => {
   return (
-    <section className="video" ref={reference} id="seccion2" >
+    <section id="section2" className="video">
         <Wrapper className="video__container">
         <video className="video__report"  controls>
         <source src={video} type="video/mp4" />

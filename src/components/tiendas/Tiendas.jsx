@@ -11,7 +11,7 @@ import { CiLocationOn } from "react-icons/ci";
 
 const Tiendas = () => {
   return (
-    <div className='tiendas'>
+    <div id="section3" className='tiendas'>
         <Wrapper>
             <div className='tiendas__text'>
                 <h2>¡ALGUNAS DE NUESTRAS TIENDAS!</h2>

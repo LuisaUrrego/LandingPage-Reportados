@@ -12,7 +12,7 @@ import Swal from 'sweetalert2';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 
-const Formulario = ({ reference }) => {
+const Formulario = () => {
 
     
     //Validaciones del formulario 
@@ -60,7 +60,7 @@ const Formulario = ({ reference }) => {
 
 
   return (
-    <div className='form'  ref={reference} id="seccion3">
+    <div  id="section4" className='form' >
       <Wrapper>
         <div className='form__text'>
           <h2>Formulario de contacto</h2>

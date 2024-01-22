@@ -3,10 +3,9 @@ import Wrapper from "../wrapper/Wrapper";
 import Logo from "../../assets/Logo.svg"
 import { useState } from "react";
 import {FaBars} from "react-icons/fa"
-import banner from "../banner/Banner"
-import footer from '../footer/Footer'
+import { Link as ScrollLink } from 'react-scroll';
 
-const Navbar = ({ onSeccion1Click, onSeccion2Click, onSeccion3Click, onSeccion4Click}) => {
+const Navbar = ({}) => {
     const [showNav, setShowNav] = useState(false);
     return (
         <nav className="navbar">
@@ -16,18 +15,21 @@ const Navbar = ({ onSeccion1Click, onSeccion2Click, onSeccion3Click, onSeccion4C
                 </a>
 
                 <ul className={`navbar__links ${showNav ? "show-nav" : ""}`}>
-                    <li onClick={(onSeccion1Click) => setShowNav (false)}>
+                    <ScrollLink to="section1" smooth={true} duration={500} onClick={() => setShowNav (false)}>
                         <a href="#" >Home</a>
-                    </li>
-                    <li onClick={(onSeccion2Click) => setShowNav (false)}>
+                    </ScrollLink>
+                    <ScrollLink to="section2" smooth={true} duration={500} onClick={() => setShowNav (false)}>
                         <a href="#" o>Video</a>
-                    </li>
-                    <li onClick={(onSeccion3Click) => setShowNav (false)}>
+                    </ScrollLink>
+                    <ScrollLink to="section3" smooth={true} duration={500} onClick={() => setShowNav (false)}>
+                        <a href="#" o>Tiendas</a>
+                    </ScrollLink>
+                    <ScrollLink to="section4" smooth={true} duration={500} onClick={() => setShowNav (false)}>
                         <a href="#" >Formulario</a>
-                    </li>
-                    <li onClick={(onSeccion4Click) => setShowNav (false)}>
+                    </ScrollLink>
+                    <ScrollLink to="section5" smooth={true} duration={500} onClick={() => setShowNav (false)}>
                         <a href="">Redes</a>
-                    </li>
+                    </ScrollLink>
                 </ul>
                 <div className={`navbar__menubar ${showNav ? "bg-color" : ""}`} onClick={() => setShowNav(!showNav)}><FaBars/></div>
                 
