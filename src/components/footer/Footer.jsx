@@ -10,7 +10,7 @@ const Footer = () => {
             <Wrapper>
                 <div className='footer__container'>
                 <div className='footer__text'>
-                    <h3>¡Siguenos en todas nuestras redes sociales!</h3>
+                    <h3>¡Siguenos en nuestras redes sociales!</h3>
                 </div>
                 <div className='footer__social'>
                     <div className='footer__instagram'>

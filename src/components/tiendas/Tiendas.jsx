@@ -11,7 +11,7 @@ import { CiLocationOn } from "react-icons/ci";
 
 const Tiendas = () => {
   return (
-    <div id="section3" className='tiendas'>
+    <div id="section4" className='tiendas'>
         <Wrapper>
             <div className='tiendas__text'>
                 <h2>¡ALGUNAS DE NUESTRAS TIENDAS!</h2>
@@ -19,19 +19,19 @@ const Tiendas = () => {
             <div className="tiendas__container">
                 <div className="tiendas__feature dark-feature">
                     <img src={tienda5}  />
-                    <h4 className='dark-features-title'><CiLocationOn />CALI</h4>
+                    <h4 className='dark-features-title'><CiLocationOn />Cali</h4>
                     <p>Carrera 5 # 13-22 lc 8</p>
                 </div>
 
                 <div className="tiendas__feature white-feature">
                     <img src={tiendaCucuta}  />
-                    <h4 className='white-features-title'><CiLocationOn />CUCÚTA</h4>
+                    <h4 className='white-features-title'><CiLocationOn />Cucúta</h4>
                     <p>Avenida 7 # 7-82 barrio centro</p>
                 </div>
 
                 <div className="tiendas__feature dark-feature">
                     <img src={tienda}  />
-                    <h4 className='dark-features-title'><CiLocationOn />MARINILLA</h4>
+                    <h4 className='dark-features-title'><CiLocationOn />Marinilla</h4>
                     <p>Calle 31 #28-20</p>
                 </div>
 
@@ -43,13 +43,13 @@ const Tiendas = () => {
 
                 <div className="tiendas__feature dark-feature">
                     <img src={tienda3}  />
-                    <h4 className='dark-features-title'><CiLocationOn />OCAÑA</h4>
+                    <h4 className='dark-features-title'><CiLocationOn />Ocaña</h4>
                     <p>	Calle 11 # 10-25 Local 37 - Centro Comercial Cañaveral</p>
                 </div>
 
                 <div className="tiendas__feature white-feature">
                     <img src={tienda8}  />
-                    <h4 className='white-features-title'><CiLocationOn />FUSA</h4>
+                    <h4 className='white-features-title'><CiLocationOn />Fusa</h4>
                     <p>	Carrera 6 # 7-21</p>
                 </div>
             </div>

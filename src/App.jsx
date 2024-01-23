@@ -12,8 +12,8 @@ function App() {
       <Navbar/>
       <Banner/>
       <Video/>
-      <Tiendas/>
       <Formulario/>
+      <Tiendas/>
       <WhatsApp phoneNumber={phoneNumber}/>
       <Footer/>
     </>

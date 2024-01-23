@@ -60,7 +60,7 @@ const Formulario = () => {
 
 
   return (
-    <div  id="section4" className='form' >
+    <div  id="section3" className='form' >
       <Wrapper>
         <div className='form__text'>
           <h2>Formulario de contacto</h2>

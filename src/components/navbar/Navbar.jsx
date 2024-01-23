@@ -22,10 +22,10 @@ const Navbar = ({}) => {
                         <a href="#" o>Video</a>
                     </ScrollLink>
                     <ScrollLink to="section3" smooth={true} duration={500} onClick={() => setShowNav (false)}>
-                        <a href="#" o>Tiendas</a>
+                        <a href="#" >Formulario</a>
                     </ScrollLink>
                     <ScrollLink to="section4" smooth={true} duration={500} onClick={() => setShowNav (false)}>
-                        <a href="#" >Formulario</a>
+                        <a href="#" o>Tiendas</a>
                     </ScrollLink>
                     <ScrollLink to="section5" smooth={true} duration={500} onClick={() => setShowNav (false)}>
                         <a href="">Redes</a>
