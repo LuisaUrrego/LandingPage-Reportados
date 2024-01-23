@@ -1,6 +1,6 @@
 import "./Banner.scss";
 import Wrapper from "../wrapper/Wrapper";
-import imagenBanner from "../../assets/Banner.png"
+import imagenBanner from "../../assets/banner2.svg"
 const Banner = () => {
   return (
     <section id="section1" className="banner">
