@@ -25,7 +25,7 @@ const Tiendas = () => {
 
                 <div className="tiendas__feature white-feature">
                     <img src={tiendaCucuta}  />
-                    <h4 className='white-features-title'><CiLocationOn />Cucúta</h4>
+                    <h4 className='white-features-title'><CiLocationOn />Cúcuta</h4>
                     <p>Avenida 7 # 7-82 barrio centro</p>
                 </div>
 
