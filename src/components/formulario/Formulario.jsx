@@ -34,12 +34,12 @@ const Formulario = () => {
           ciudad: '',
           residencia: '',
           tiempoReportado: '',
+          estado: 'Pendiente'
       },
       validationSchema: validationSchema,
       onSubmit:async(values, { setSubmitting }) => {       
         try {
             const response = await axios.post('https://nexyapp-f3a65a020e2a.herokuapp.com/zoho/v1/console/Reportados_Payjoy', values);
-            console.log('Respuesta de la API:', response.data);
             setSubmitting(false);
             Swal.fire({
               position: "top-end",
@@ -53,7 +53,6 @@ const Formulario = () => {
             console.error('Error en la petición:', error);
             setSubmitting(false);
           }
-          console.log(values)
       }
     })
 
